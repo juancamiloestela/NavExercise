@@ -1,0 +1,32 @@
+nav > ul,
+article{
+	-webkit-transition: -webkit-transform 500ms ease-in;
+	-moz-transition: -moz-transform 500ms ease-in;
+	-ms-transition: -ms-transform 500ms ease-in;
+	-o-transition: -o-transform 500ms ease-in;
+	transition: transform 500ms ease-in;
+}
+
+nav a.hamburger{
+	-webkit-transition: transform 300ms ease-out, left 500ms ease-in;
+	-moz-transition: transform 300ms ease-out, left 500ms ease-in;
+	-ms-transition: transform 300ms ease-out, left 500ms ease-in;
+	-o-transition: transform 300ms ease-out, left 500ms ease-in;
+	transition:  transform 300ms ease-out, left 500ms ease-in;
+}
+
+nav a.logo{
+	-webkit-transition: transform 400ms ease-out;
+	-moz-transition: transform 400ms ease-out;
+	-ms-transition: transform 400ms ease-out;
+	-o-transition: transform 400ms ease-out;
+	transition:  transform 400ms ease-out;
+}
+
+nav::after{
+	-webkit-transition: opacity 500ms 100ms ease-out;
+	-moz-transition: opacity 500ms 100ms ease-out;
+	-ms-transition: opacity 500ms 100ms ease-out;
+	-o-transition: opacity 500ms 100ms ease-out;
+	transition:  opacity 500ms 100ms ease-out;
+}

@@ -1,0 +1,104 @@
+@media all and (min-width: 768px) {
+	nav{
+		height: auto;
+	}
+		nav a.logo{
+			position: static;
+			-webkit-transform: none;
+			-moz-transform: none;
+			-ms-transform: none;
+			-o-transform: none;
+			transform: none;
+			display: inline-block;
+			width:3.75em;
+			height:1.5em;
+			margin: 1.5em 3em 1.5em 1.5em;
+			float:left;
+		}
+		nav a.hamburger{
+			display: none;
+		}
+		nav > ul{
+			position: static;
+			margin: 0;
+			width: auto;
+			padding: 0;
+			background-color: transparent;
+			color: #fff;
+			-webkit-transform: none;
+			-moz-transform: none;
+			-ms-transform: none;
+			-o-transform: none;
+			transform: none;
+			display: inline;
+			overflow: visible;
+			float:left;
+		}
+			nav > ul::after{
+				display: none;
+			}
+			nav > ul > li{
+				display: inline-block;
+				padding:0.569em 1.14em;
+			}
+				nav > ul > li:hover{
+					color:#ec008c;
+					background-color:#fff;
+				}
+
+			nav ul li a + ul::before{
+				display: none;
+			}
+
+			nav ul li ul{
+				position: absolute;
+				z-index: 9;
+				background-color: #fff;
+				top: 100%;
+				left: 0;
+				color: #333;
+				width: auto;
+			}
+			nav ul li.open{
+				color: #ec008c;
+				background-color: #fff;
+			}
+				nav ul li ul li{
+					padding: 0 1.5em;
+					white-space: pre;
+				}
+				nav ul li ul li:hover{
+					background-color: #eee;
+				}
+				nav ul li ul li:first-child{
+					margin-top:0.75em;
+				}
+
+			.menu-open .overlay{
+				visibility: visible;
+				opacity: 1;
+			}
+
+	.hero{
+		margin-bottom: 3.75em;
+		height: 40em;
+		padding-top:1px;
+	}
+		.hero h1{
+			color: #fff;
+			position: static;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 7.5em;
+			line-height: 1.1em;
+			width:7em;
+			margin-top:1.5em;
+		}
+
+	.body{
+		max-width: 40.35em;
+		margin:0 auto;
+		font: 1.5em/1.5em Galaxie;
+		padding-bottom:1px;
+	}
+}
